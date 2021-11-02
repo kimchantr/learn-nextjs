@@ -8,15 +8,15 @@ import { useRouter } from 'next/router'
 const Home: NextPage = () => {
   const router = useRouter()
 
-  const goToDetailPage = () => {
-    router.push({
-      pathname: '/posts/[postId]',
-      query: {
-        postId: 123,
-        ref: 'social',
-      },
-    })
-  }
+  // const goToDetailPage = () => {
+  //   router.push({
+  //     pathname: '/posts/[postId]',
+  //     query: {
+  //       postId: 123,
+  //       ref: 'social',
+  //     },
+  //   })
+  // }
 
   return (
     <div className={styles.container}>
@@ -33,13 +33,13 @@ const Home: NextPage = () => {
           Get started by editing <code className={styles.code}>pages/index.tsx</code>
         </p>
 
-        <Link href="/about">
+        {/* <Link href="/about">
           <a>Go to about page</a>
         </Link>
 
-        <button onClick={goToDetailPage}>Go to detail page</button>
+        <button onClick={goToDetailPage}>Go to detail page</button> */}
 
-        <div className={styles.grid}>
+        {/* <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h2>Documentation &rarr;</h2>
             <p>Find in-depth information about Next.js features and API.</p>
@@ -62,7 +62,7 @@ const Home: NextPage = () => {
             <h2>Deploy &rarr;</h2>
             <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
           </a>
-        </div>
+        </div> */}
       </main>
 
       <footer className={styles.footer}>
