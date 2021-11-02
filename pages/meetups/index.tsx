@@ -8,8 +8,6 @@ export interface MeetupListPageProps {
 }
 
 function MeetupListPage({ meetups }: MeetupListPageProps) {
-  console.log(meetups)
-
   return (
     <>
       <Head>
