@@ -5,4 +5,7 @@ export interface Meetup {
   image: string
   address: string
   description: string
+
+  createdAt?: number
+  updatedAt?: number
 }
